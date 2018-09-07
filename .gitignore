@@ -1,0 +1,17 @@
+.vs
+Temp/
+obj/
+2dtest1.sublime-project
+2dtest1.sublime-workspace
+*.log
+Library/ShaderCache/
+Library/*_cache*
+Library/LastBuild.buildreport
+Library/PlayerDataCache/
+dist/_tmp/*
+
+Library/CurrentLayout.dwlt
+#Library/EditorInstance.json
+Library/InspectorExpandedItems.asset
+#Library/assetDatabase3
+Library/expandedItems
