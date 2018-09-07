@@ -94,7 +94,10 @@ public class PlayerController : MonoBehaviour {
                     rigidbody.velocity = new Vector2(-runningSpeed , rigidbody.velocity.y);
                 }
             } 
-        }
+        } 
+        //else if (GameManager.sharedInstance.currentGameState == GameManager.GameState.menu) {
+        //    rigidbody.velocity = new Vector2(0, 0);
+        //}
     }
 
     void Jump(bool isSuperJump) {

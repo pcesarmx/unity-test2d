@@ -190,11 +190,13 @@ public class GameManager : MonoBehaviour
     public void setGameState(GameState state) {
         this.currentGameState = state;
         if (state == GameState.menu) {
+            Time.timeScale = 0;
             pauseFlag = true;
             menuCanvas.enabled = true;
             gameCanvas.enabled = false;
             gameOverCanvas.enabled = false;
         } else if (state == GameState.inGame) {
+            Time.timeScale = 1;
             menuCanvas.enabled = false;
             gameCanvas.enabled = true;
             gameOverCanvas.enabled = false;
